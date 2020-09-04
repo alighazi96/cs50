@@ -11,13 +11,21 @@ do
 
 }
 while(height<1);
-for(int i=1;i<height+1;i++)
+if(height>1&&height<9)
 {
-for(int j=1;j<i+1;j++)
+for(int i=0;i<height;i++)
 {
-printf("#");
+    
+for(int j=0;j<height-1-i;j++)
+{
+printf(" ");
+}
+for(int j=0;j<i+1;j++)
+{
+    printf("#");
 }
 printf("\n");
 
+}
 }
 }
