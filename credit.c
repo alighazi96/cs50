@@ -37,14 +37,14 @@ int main(void)
         sum=sum+(mult2%10)+(mult2/10);
         workingcc=workingcc/100;
     }
+    //length of number/digit counter
     workingcc = credit_number;
-    
     while(workingcc!=0)
     {
         workingcc=workingcc/10;
         count++;
     }
-     
+     //divisor
      for(int i=0;i<count-2;i++)
      {
          
@@ -53,7 +53,7 @@ int main(void)
      }
      int firstdigit=credit_number/divisor;
      int first2digit=credit_number/(divisor/10);
-     
+     //final check
     if(sum%10==0)
     {
      if(firstdigit==4&&(count==13||count==16))
