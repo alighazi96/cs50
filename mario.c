@@ -8,11 +8,9 @@ int height;
 do
 { height=get_int("enter the height:");
 
-
 }
-while(height<1);
-if(height>1&&height<9)
-{
+while(height<1||height>8);
+
 for(int i=0;i<height;i++)
 {
     
@@ -24,8 +22,16 @@ for(int j=0;j<i+1;j++)
 {
     printf("#");
 }
+for(int j=0;j<2;j++)
+{
+    printf(" ");
+}
+for(int j=0;j<i+1;j++)
+{
+    printf("#");
+}
 printf("\n");
 
 }
-}
+
 }
