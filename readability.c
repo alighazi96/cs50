@@ -45,11 +45,11 @@ int main(void)
     formula=(0.0588 * (letter*100/word)) - (0.296 * (sentence*100/word)) - 15.8;
     if(1<=formula&&formula<16)
     {
-    printf("Grade: %d\n",(int)round(formula));
+    printf("Grade %d\n",(int)round(formula));
     }
     else if(formula>16)
     {
-    printf("Grade:16+\n");
+    printf("Grade 16+\n");
     }
     else if(formula<1)
     {
