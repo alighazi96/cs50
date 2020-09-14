@@ -11,13 +11,13 @@ int main(int argc,string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    
+
     int key =atoi(argv[1]);
-    
+
     string plaintext = get_string("plaintext:");
-    
-    printf("ciphertext:");
-    
+
+    printf("ciphertext: ");
+
     for(int i = 0,n = strlen(plaintext);i < n;i++)
     {
         char c = plaintext[i];
@@ -35,6 +35,6 @@ int main(int argc,string argv[])
             }
         }
     }
-    
-    
+
+
 }
