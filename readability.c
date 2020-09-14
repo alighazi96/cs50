@@ -49,15 +49,15 @@ int main(void)
     }
     else if(formula>16)
     {
-    printf("Grade: %d+\n",(int)round(formula));
+    printf("Grade:16+\n");
     }
     else if(formula<1)
     {
         printf("Grade:Before Grade 1\n");
     }
-    printf("letter:%i\n",letter);
-    printf("word:%i\n",word);
-    printf("sentence:%i\n",sentence);
+    // printf("letter:%i\n",letter);
+    // printf("word:%i\n",word);
+    // printf("sentence:%i\n",sentence);
  
     
     
