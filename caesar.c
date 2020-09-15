@@ -3,11 +3,13 @@
 #include<cs50.h>
 #include<string.h>
 #include<stdlib.h>
+bool is_valid_key(string s);
+
 
 int main(int argc,string argv[])
 {
-    if(argc != 2 )
-    {printf("Usage: ./caesar key\n");
+    if(argc != 2|| !is_valid_key(argv[1]))
+    {printf("Usage: ./caesar key");
     return 1;
     }
     
@@ -25,7 +27,7 @@ int main(int argc,string argv[])
             char m ='A';
             if(islower(c))
                 m='a';
-            printf("%c\n",(c - m + key)%26 + m);    
+            printf("%c",(c - m + key)%26 + m);    
         }
         else
         {
@@ -35,4 +37,17 @@ int main(int argc,string argv[])
     
 
 } 
+
+bool is_valid_key(string s)
+{
+    for(int i = 0;i<strlen(s) ;i++)
+    {
+        char ch =s[i];
+       if(!isdigit(ch))
+     {
+         return false;
+     }
+    }    
+    return true;         
+}
     
