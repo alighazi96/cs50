@@ -17,7 +17,7 @@ int main(int argc,string argv[])
     
     string plaintext = get_string("plaintext: ");
     
-    printf("chipertext: ");
+    printf("ciphertext: ");
     for(int i=0,n = strlen(plaintext);i < n;i++)
     {
        char c=plaintext[i];
